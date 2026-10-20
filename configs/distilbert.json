@@ -1,0 +1,10 @@
+{
+  "model_name": "distilbert-base-uncased",
+  "random_seed": 42,
+  "max_length": 256,
+  "learning_rate": 0.00002,
+  "batch_size": 16,
+  "epochs": 3,
+  "weight_decay": 0.01,
+  "metric_for_best_model": "f1"
+}
