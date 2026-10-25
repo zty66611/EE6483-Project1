@@ -1,6 +1,7 @@
 {
   "random_seed": 42,
   "validation_size": 0.2,
+  "features": "word",
   "vectorizer": {
     "ngram_range": [1, 2],
     "min_df": 2,

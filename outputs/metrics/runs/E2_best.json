@@ -1,0 +1,66 @@
+{
+  "run_id": "E2_best",
+  "model": "tfidf_lr",
+  "timestamp": "2026-10-25T22:28:59",
+  "config": {
+    "random_seed": 42,
+    "validation_size": 0.2,
+    "features": "word+char",
+    "vectorizer": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 1,
+      "max_features": 30000,
+      "sublinear_tf": true
+    },
+    "char_vectorizer": {
+      "analyzer": "char_wb",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 2,
+      "max_features": 50000,
+      "sublinear_tf": true
+    },
+    "classifier": {
+      "type": "logistic_regression",
+      "C": 3,
+      "max_iter": 1000,
+      "class_weight": "balanced"
+    }
+  },
+  "metrics": {
+    "accuracy": 0.9220598469032707,
+    "macro_f1": 0.8474383474383473,
+    "precision_negative": 0.7207207207207207,
+    "recall_negative": 0.7619047619047619,
+    "f1_negative": 0.7407407407407407,
+    "support_negative": 210,
+    "precision_positive": 0.9588477366255144,
+    "recall_positive": 0.9494702526487367,
+    "f1_positive": 0.9541359541359541,
+    "support_positive": 1227,
+    "confusion_matrix": [
+      [
+        160,
+        50
+      ],
+      [
+        62,
+        1165
+      ]
+    ]
+  },
+  "resources": {
+    "train_time_s": 2.0143232999835163,
+    "val_infer_time_s": 0.3530977999907918,
+    "peak_ram_mb": 292.71484375,
+    "train_ram_increase_mb": 108.37890625,
+    "n_features": 79090,
+    "model_size_mb": 3.323944091796875,
+    "model_path": "outputs\\models\\E2_best.joblib"
+  }
+}

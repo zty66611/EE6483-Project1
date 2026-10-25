@@ -1,0 +1,66 @@
+{
+  "run_id": "E2_word_char",
+  "model": "tfidf_lr",
+  "timestamp": "2026-10-25T22:26:24",
+  "config": {
+    "random_seed": 42,
+    "validation_size": 0.2,
+    "features": "word+char",
+    "vectorizer": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2,
+      "max_features": 50000,
+      "sublinear_tf": true
+    },
+    "char_vectorizer": {
+      "analyzer": "char_wb",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 2,
+      "max_features": 50000,
+      "sublinear_tf": true
+    },
+    "classifier": {
+      "type": "logistic_regression",
+      "C": 1.0,
+      "max_iter": 1000,
+      "class_weight": null
+    }
+  },
+  "metrics": {
+    "accuracy": 0.9018789144050104,
+    "macro_f1": 0.7304381143958715,
+    "precision_negative": 0.9259259259259259,
+    "recall_negative": 0.35714285714285715,
+    "f1_negative": 0.5154639175257731,
+    "support_negative": 210,
+    "precision_positive": 0.9004424778761062,
+    "recall_positive": 0.9951100244498777,
+    "f1_positive": 0.9454123112659698,
+    "support_positive": 1227,
+    "confusion_matrix": [
+      [
+        75,
+        135
+      ],
+      [
+        6,
+        1221
+      ]
+    ]
+  },
+  "resources": {
+    "train_time_s": 1.798607999982778,
+    "val_infer_time_s": 0.38133850001031533,
+    "peak_ram_mb": 295.078125,
+    "train_ram_increase_mb": 110.7109375,
+    "n_features": 85648,
+    "model_size_mb": 3.62115478515625,
+    "model_path": "outputs\\models\\E2_word_char.joblib"
+  }
+}

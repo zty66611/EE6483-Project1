@@ -1,0 +1,56 @@
+{
+  "run_id": "E1_word",
+  "model": "tfidf_lr",
+  "timestamp": "2026-10-25T22:26:19",
+  "config": {
+    "random_seed": 42,
+    "validation_size": 0.2,
+    "features": "word",
+    "vectorizer": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2,
+      "max_features": 50000,
+      "sublinear_tf": true
+    },
+    "classifier": {
+      "type": "logistic_regression",
+      "C": 1.0,
+      "max_iter": 1000,
+      "class_weight": null
+    }
+  },
+  "metrics": {
+    "accuracy": 0.8761308281141267,
+    "macro_f1": 0.6043453242751605,
+    "precision_negative": 0.9444444444444444,
+    "recall_negative": 0.1619047619047619,
+    "f1_negative": 0.2764227642276423,
+    "support_negative": 210,
+    "precision_positive": 0.8743754461099215,
+    "recall_positive": 0.9983700081499592,
+    "f1_positive": 0.9322678843226788,
+    "support_positive": 1227,
+    "confusion_matrix": [
+      [
+        34,
+        176
+      ],
+      [
+        2,
+        1225
+      ]
+    ]
+  },
+  "resources": {
+    "train_time_s": 0.4409806000185199,
+    "val_infer_time_s": 0.068120599957183,
+    "peak_ram_mb": 220.23046875,
+    "train_ram_increase_mb": 35.85546875,
+    "n_features": 36558,
+    "model_size_mb": 1.6387939453125,
+    "model_path": "outputs\\models\\E1_word.joblib"
+  }
+}
