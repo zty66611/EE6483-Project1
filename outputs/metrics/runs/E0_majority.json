@@ -1,0 +1,42 @@
+{
+  "run_id": "E0_majority",
+  "model": "majority",
+  "timestamp": "2026-10-25T22:26:16",
+  "config": {
+    "random_seed": 42,
+    "classifier": {
+      "type": "majority"
+    }
+  },
+  "metrics": {
+    "accuracy": 0.8538622129436325,
+    "macro_f1": 0.4605855855855856,
+    "precision_negative": 0.0,
+    "recall_negative": 0.0,
+    "f1_negative": 0.0,
+    "support_negative": 210,
+    "precision_positive": 0.8538622129436325,
+    "recall_positive": 1.0,
+    "f1_positive": 0.9211711711711712,
+    "support_positive": 1227,
+    "confusion_matrix": [
+      [
+        0,
+        210
+      ],
+      [
+        0,
+        1227
+      ]
+    ]
+  },
+  "resources": {
+    "train_time_s": 0.011973599961493164,
+    "val_infer_time_s": 0.0002738999901339412,
+    "peak_ram_mb": 184.77734375,
+    "train_ram_increase_mb": 0.5078125,
+    "n_features": null,
+    "model_size_mb": 0.00063323974609375,
+    "model_path": "outputs\\models\\E0_majority.joblib"
+  }
+}

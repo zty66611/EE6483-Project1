@@ -1,0 +1,71 @@
+{
+  "config": {
+    "random_seed": 42,
+    "validation_size": 0.2,
+    "features": "word+char",
+    "vectorizer": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 1,
+      "max_features": 30000,
+      "sublinear_tf": true
+    },
+    "char_vectorizer": {
+      "analyzer": "char_wb",
+      "ngram_range": [
+        3,
+        5
+      ],
+      "min_df": 2,
+      "max_features": 50000,
+      "sublinear_tf": true
+    },
+    "classifier": {
+      "type": "logistic_regression",
+      "C": 3,
+      "max_iter": 1000,
+      "class_weight": "balanced"
+    }
+  },
+  "cv": {
+    "folds": 5,
+    "accuracy_mean": 0.9230023086630108,
+    "accuracy_std": 0.005325010294597781,
+    "accuracy_per_fold": [
+      0.9283228949199722,
+      0.9151009046624913,
+      0.9282729805013927,
+      0.9185236768802229,
+      0.924791086350975
+    ],
+    "macro_f1_mean": 0.8489705966897623,
+    "macro_f1_std": 0.010954096465083673,
+    "macro_f1_per_fold": [
+      0.8604939842501873,
+      0.8338167713167712,
+      0.8620352569932401,
+      0.8409108340506037,
+      0.8475961368380089
+    ],
+    "recall_negative_mean": 0.7643472317156528,
+    "recall_negative_std": 0.030598047590783765,
+    "recall_negative_per_fold": [
+      0.7904761904761904,
+      0.7380952380952381,
+      0.8086124401913876,
+      0.7559808612440191,
+      0.7285714285714285
+    ],
+    "recall_positive_mean": 0.95011546883538,
+    "recall_positive_std": 0.004723501111064127,
+    "recall_positive_per_fold": [
+      0.9519152404237978,
+      0.9453952730236349,
+      0.9486552567237164,
+      0.9462102689486552,
+      0.9584013050570962
+    ]
+  }
+}

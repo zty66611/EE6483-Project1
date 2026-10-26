@@ -1,0 +1,76 @@
+{
+  "train": {
+    "split": "train",
+    "n_rows": 7401,
+    "columns": [
+      "reviews",
+      "sentiments"
+    ],
+    "missing_text": 0,
+    "empty_text": 0,
+    "exact_duplicate_rows": 216,
+    "duplicate_after_cleaning": 219,
+    "html_remnants": 0,
+    "words": {
+      "mean": 56.68,
+      "median": 42.0,
+      "p95": 143.0,
+      "max": 1066
+    },
+    "chars": {
+      "mean": 298.99,
+      "median": 221.0,
+      "p95": 757.0,
+      "max": 5508
+    },
+    "label_counts": {
+      "0": 1082,
+      "1": 6319
+    },
+    "label_ratio": {
+      "0": 0.1462,
+      "1": 0.8538
+    },
+    "missing_label": 0,
+    "texts_with_conflicting_labels": 0,
+    "words_by_label": {
+      "0": {
+        "mean": 62.38,
+        "median": 50.0,
+        "p95": 141.9000000000001,
+        "max": 588
+      },
+      "1": {
+        "mean": 55.71,
+        "median": 41.0,
+        "p95": 143.09999999999945,
+        "max": 1066
+      }
+    }
+  },
+  "test": {
+    "split": "test",
+    "n_rows": 1851,
+    "columns": [
+      "reviews"
+    ],
+    "missing_text": 0,
+    "empty_text": 0,
+    "exact_duplicate_rows": 21,
+    "duplicate_after_cleaning": 21,
+    "html_remnants": 0,
+    "words": {
+      "mean": 55.44,
+      "median": 40.0,
+      "p95": 148.5,
+      "max": 749
+    },
+    "chars": {
+      "mean": 293.41,
+      "median": 217.0,
+      "p95": 800.0,
+      "max": 3907
+    }
+  },
+  "test_texts_also_in_train": 101
+}
