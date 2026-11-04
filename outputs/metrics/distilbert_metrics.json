@@ -2,7 +2,7 @@
   "model": "distilbert-base-uncased",
   "config": {
     "model_name": "distilbert-base-uncased",
-    "random_seed": 42,
+    "random_seed": 62,
     "max_length": 256,
     "learning_rate": 2e-05,
     "batch_size": 16,
@@ -11,47 +11,47 @@
     "metric_for_best_model": "f1",
     "use_class_weight": true
   },
-  "best_epoch": 3,
-  "best_threshold": 0.30000000000000004,
-  "total_seconds": 263.0,
+  "best_epoch": 1,
+  "best_threshold": 0.6600000000000001,
+  "total_seconds": 194.0,
   "peak_vram_mb": 2108.8,
   "model_size_mb": 256.1,
   "n_params": 66955010,
   "history": {
     "train_loss": [
-      0.360546079536693,
-      0.20540014559778177,
-      0.11117393317043833
+      0.3753199154873275,
+      0.19807622502622607,
+      0.09856377681878964
     ],
     "val_loss": [
-      0.2257692813873291,
-      0.2802337110042572,
-      0.3132392466068268
+      0.17026357352733612,
+      0.2570229172706604,
+      0.2848506569862366
     ],
     "val_macro_f1": [
-      0.8805675606720116,
-      0.8771706979628835,
-      0.884507118628312
+      0.8840747000455148,
+      0.8821873254801196,
+      0.8800966352311095
     ]
   },
   "val_metrics": {
-    "threshold": 0.30000000000000004,
-    "accuracy": 0.942240779401531,
-    "macro_f1": 0.884507118628312,
-    "negative_precision": 0.8009478672985783,
-    "negative_recall": 0.8047619047619048,
-    "negative_f1": 0.8028503562945368,
-    "positive_precision": 0.966557911908646,
-    "positive_recall": 0.9657701711491442,
-    "positive_f1": 0.9661638809620873,
+    "threshold": 0.6600000000000001,
+    "accuracy": 0.9436325678496869,
+    "macro_f1": 0.8840747000455148,
+    "negative_precision": 0.8274111675126904,
+    "negative_recall": 0.7761904761904762,
+    "negative_f1": 0.800982800982801,
+    "positive_precision": 0.9620967741935483,
+    "positive_recall": 0.9722901385493072,
+    "positive_f1": 0.9671665991082287,
     "confusion_matrix": [
       [
-        169,
-        41
+        163,
+        47
       ],
       [
-        42,
-        1185
+        34,
+        1193
       ]
     ]
   }
