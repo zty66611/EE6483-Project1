@@ -69,6 +69,6 @@ python -m src.predict --model outputs/models/distilbert-seed62 --metrics outputs
   会写入 `outputs/metrics/runs/<run_id>.json`、追加到 `outputs/metrics/experiments.csv`，并生成 `outputs/figures/cm_<run_id>.png`。
 - 验证集预测用 `src.evaluate.save_predictions` 保存到 `outputs/metrics/predictions/<run_id>_val.csv`
   （列为 orig_index, text, sentiments, pred, prob_positive），供错误案例分析对比使用。
-- 项目说明 PDF 的提交示例列名为 `id,label`。当前 `test.json` 只有 `reviews`，没有 `id`；请优先使用课程提供的 ID 模板，并通过 `--template` 与 `--pred-col label` 生成最终文件。
-- 只有在课程确认 ID 可按测试行号生成时，才使用 `--id-from-row`；预测脚本默认不会臆造 ID。
+- 项目说明 PDF 的提交示例列名为 `id,label`。当前 `test.json` 只有 `reviews`，没有 `id`；本阶段按用户确认使用测试集原顺序的 1 起始行号作为 `id`，通过 `--id-from-row` 生成。
+- 如果课程之后提供带官方 ID 的模板，使用 `--template <模板路径> --pred-col label` 生成对应版本；脚本默认不会臆造 ID。
 - DistilBERT 三种子验证结果、均值与标准差分别保存在 `outputs/metrics/distilbert_seed{42,52,62}.json` 和 `outputs/metrics/distilbert_seed_summary.csv`。
