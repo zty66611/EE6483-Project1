@@ -1,0 +1,152 @@
+{
+  "experiment": "DistilBERT three-seed validation rerun",
+  "seeds": [
+    42,
+    52,
+    62
+  ],
+  "fixed_config": {
+    "model_name": "distilbert-base-uncased",
+    "random_seed": 42,
+    "max_length": 256,
+    "learning_rate": 2e-05,
+    "batch_size": 16,
+    "epochs": 3,
+    "weight_decay": 0.01,
+    "metric_for_best_model": "f1",
+    "use_class_weight": true
+  },
+  "runs": [
+    {
+      "seed": 42,
+      "best_epoch": 1,
+      "threshold": 0.12000000000000001,
+      "metrics": {
+        "accuracy": 0.9401530967292971,
+        "macro_f1": 0.8805675606720116,
+        "negative_precision": 0.7924528301886793,
+        "negative_recall": 0.8,
+        "negative_f1": 0.7962085308056872,
+        "positive_precision": 0.9657142857142857,
+        "positive_recall": 0.9641401792991035,
+        "positive_f1": 0.9649265905383361
+      },
+      "train_seconds": 203.2,
+      "peak_vram_mb": 2108.8,
+      "model_size_mb": 256.1,
+      "confusion_matrix": [
+        [
+          168,
+          42
+        ],
+        [
+          44,
+          1183
+        ]
+      ]
+    },
+    {
+      "seed": 52,
+      "best_epoch": 1,
+      "threshold": 0.060000000000000005,
+      "metrics": {
+        "accuracy": 0.9366736256089074,
+        "macro_f1": 0.8790208205161416,
+        "negative_precision": 0.7531914893617021,
+        "negative_recall": 0.8428571428571429,
+        "negative_f1": 0.7955056179775281,
+        "positive_precision": 0.9725457570715474,
+        "positive_recall": 0.9527302363488183,
+        "positive_f1": 0.962536023054755
+      },
+      "train_seconds": 195.8,
+      "peak_vram_mb": 2108.8,
+      "model_size_mb": 256.1,
+      "confusion_matrix": [
+        [
+          177,
+          33
+        ],
+        [
+          58,
+          1169
+        ]
+      ]
+    },
+    {
+      "seed": 62,
+      "best_epoch": 1,
+      "threshold": 0.6600000000000001,
+      "metrics": {
+        "accuracy": 0.9436325678496869,
+        "macro_f1": 0.8840747000455148,
+        "negative_precision": 0.8274111675126904,
+        "negative_recall": 0.7761904761904762,
+        "negative_f1": 0.800982800982801,
+        "positive_precision": 0.9620967741935483,
+        "positive_recall": 0.9722901385493072,
+        "positive_f1": 0.9671665991082287
+      },
+      "train_seconds": 194.0,
+      "peak_vram_mb": 2108.8,
+      "model_size_mb": 256.1,
+      "confusion_matrix": [
+        [
+          163,
+          47
+        ],
+        [
+          34,
+          1193
+        ]
+      ]
+    }
+  ],
+  "aggregate_mean_sample_std": {
+    "accuracy": {
+      "mean": 0.9401530967292971,
+      "sample_std": 0.00347947112038971
+    },
+    "macro_f1": {
+      "mean": 0.8812210270778893,
+      "sample_std": 0.0025895343851863495
+    },
+    "negative_precision": {
+      "mean": 0.7910184956876906,
+      "sample_std": 0.03713062270962631
+    },
+    "negative_recall": {
+      "mean": 0.8063492063492064,
+      "sample_std": 0.033783804212369456
+    },
+    "negative_f1": {
+      "mean": 0.7975656499220054,
+      "sample_std": 0.0029801363459109973
+    },
+    "positive_precision": {
+      "mean": 0.9667856056597939,
+      "sample_std": 0.00530623271402718
+    },
+    "positive_recall": {
+      "mean": 0.963053518065743,
+      "sample_std": 0.009825124324925346
+    },
+    "positive_f1": {
+      "mean": 0.9648764042337733,
+      "sample_std": 0.00231569593116736
+    },
+    "train_seconds": {
+      "mean": 197.66666666666666,
+      "sample_std": 4.8757905341937375
+    },
+    "peak_vram_mb": {
+      "mean": 2108.8,
+      "sample_std": 0.0
+    },
+    "model_size_mb": {
+      "mean": 256.1,
+      "sample_std": 0.0
+    }
+  },
+  "note": "Standard deviation uses sample standard deviation (n-1). All runs use the same fixed train/validation CSV split."
+}

@@ -1,0 +1,58 @@
+{
+  "model": "distilbert-base-uncased",
+  "config": {
+    "model_name": "distilbert-base-uncased",
+    "random_seed": 62,
+    "max_length": 256,
+    "learning_rate": 2e-05,
+    "batch_size": 16,
+    "epochs": 3,
+    "weight_decay": 0.01,
+    "metric_for_best_model": "f1",
+    "use_class_weight": true
+  },
+  "best_epoch": 1,
+  "best_threshold": 0.6600000000000001,
+  "total_seconds": 194.0,
+  "peak_vram_mb": 2108.8,
+  "model_size_mb": 256.1,
+  "n_params": 66955010,
+  "history": {
+    "train_loss": [
+      0.3753199154873275,
+      0.19807622502622607,
+      0.09856377681878964
+    ],
+    "val_loss": [
+      0.17026357352733612,
+      0.2570229172706604,
+      0.2848506569862366
+    ],
+    "val_macro_f1": [
+      0.8840747000455148,
+      0.8821873254801196,
+      0.8800966352311095
+    ]
+  },
+  "val_metrics": {
+    "threshold": 0.6600000000000001,
+    "accuracy": 0.9436325678496869,
+    "macro_f1": 0.8840747000455148,
+    "negative_precision": 0.8274111675126904,
+    "negative_recall": 0.7761904761904762,
+    "negative_f1": 0.800982800982801,
+    "positive_precision": 0.9620967741935483,
+    "positive_recall": 0.9722901385493072,
+    "positive_f1": 0.9671665991082287,
+    "confusion_matrix": [
+      [
+        163,
+        47
+      ],
+      [
+        34,
+        1193
+      ]
+    ]
+  }
+}
