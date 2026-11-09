@@ -1,0 +1,45 @@
+{
+  "run_id": "distilbert_seed62",
+  "model": "distilbert",
+  "timestamp": "2026-11-09T15:14:55",
+  "config": {
+    "model_name": "distilbert-base-uncased",
+    "random_seed": 62,
+    "max_length": 256,
+    "learning_rate": 2e-05,
+    "batch_size": 16,
+    "epochs": 3,
+    "weight_decay": 0.01,
+    "metric_for_best_model": "f1",
+    "use_class_weight": true,
+    "run_name": "seed62"
+  },
+  "metrics": {
+    "accuracy": 0.9380654140570633,
+    "macro_f1": 0.8761582356375877,
+    "precision_negative": 0.7867298578199052,
+    "recall_negative": 0.7904761904761904,
+    "f1_negative": 0.7885985748218527,
+    "support_negative": 210,
+    "precision_positive": 0.964110929853181,
+    "recall_positive": 0.9633251833740831,
+    "f1_positive": 0.9637178964533225,
+    "support_positive": 1227,
+    "confusion_matrix": [
+      [
+        166,
+        44
+      ],
+      [
+        45,
+        1182
+      ]
+    ]
+  },
+  "resources": {
+    "train_time_s": 193.947,
+    "val_infer_time_s": 4.688,
+    "peak_gpu_mem_mb": 2108.818,
+    "model_size_mb": 256.105
+  }
+}

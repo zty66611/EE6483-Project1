@@ -57,7 +57,10 @@ python -m src.predict --model outputs/models/E2_best_full.joblib --output output
 # 7. 汇总比较表与图 -> outputs/metrics/comparison.md, outputs/figures/model_comparison.png
 python -m src.evaluate
 
-python -m src.train_transformer --config configs/distilbert.json
+python -m src.train_transformer --config configs/distilbert.json --seed 42 --run-name seed42
+python -m src.train_transformer --config configs/distilbert.json --seed 52 --run-name seed52
+python -m src.train_transformer --config configs/distilbert.json --seed 62 --run-name seed62
+python -m src.summarize_transformer
 # DistilBERT 测试集预测；课程模板需包含 id,label 两列
 python -m src.predict --model outputs/models/distilbert-seed62 --metrics outputs/metrics/distilbert_seed62.json --config configs/distilbert.json --template path/to/submission_template.csv --pred-col label
 ```

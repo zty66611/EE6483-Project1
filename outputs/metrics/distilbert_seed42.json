@@ -9,50 +9,73 @@
     "epochs": 3,
     "weight_decay": 0.01,
     "metric_for_best_model": "f1",
-    "use_class_weight": true
+    "use_class_weight": true,
+    "run_name": "seed42"
   },
-  "best_epoch": 1,
-  "best_threshold": 0.12000000000000001,
-  "total_seconds": 203.2,
+  "best_epoch": 2,
+  "best_threshold": 0.8700000000000002,
+  "total_seconds": 262.3,
   "peak_vram_mb": 2108.8,
   "model_size_mb": 256.1,
   "n_params": 66955010,
   "history": {
     "train_loss": [
-      0.3599115527079751,
-      0.20497508329830857,
-      0.10632082871743478
+      0.3572024538828474,
+      0.20036199833007737,
+      0.10821626046122725
     ],
     "val_loss": [
-      0.22616687417030334,
-      0.2831573188304901,
-      0.31236013770103455
+      0.2020237296819687,
+      0.20677870512008667,
+      0.3153363764286041
     ],
     "val_macro_f1": [
-      0.8805675606720116,
-      0.874674297025434,
-      0.8743621646290203
+      0.875487640789627,
+      0.8961012010678245,
+      0.8760937535146321
     ]
   },
   "val_metrics": {
-    "threshold": 0.12000000000000001,
-    "accuracy": 0.9401530967292971,
-    "macro_f1": 0.8805675606720116,
-    "negative_precision": 0.7924528301886793,
-    "negative_recall": 0.8,
-    "negative_f1": 0.7962085308056872,
-    "positive_precision": 0.9657142857142857,
-    "positive_recall": 0.9641401792991035,
-    "positive_f1": 0.9649265905383361,
+    "threshold": 0.8700000000000002,
+    "accuracy": 0.9464161447459986,
+    "macro_f1": 0.8961012010678245,
+    "negative_precision": 0.7929515418502202,
+    "negative_recall": 0.8571428571428571,
+    "negative_f1": 0.8237986270022883,
+    "positive_precision": 0.9752066115702479,
+    "positive_recall": 0.9616951915240424,
+    "positive_f1": 0.9684037751333607,
     "confusion_matrix": [
       [
-        168,
-        42
+        180,
+        30
       ],
       [
-        44,
-        1183
+        47,
+        1180
       ]
     ]
-  }
+  },
+  "val_metrics_threshold_05": {
+    "threshold": 0.5,
+    "accuracy": 0.9394572025052192,
+    "macro_f1": 0.8749741235767967,
+    "negative_precision": 0.8153846153846154,
+    "negative_recall": 0.7571428571428571,
+    "negative_f1": 0.7851851851851852,
+    "positive_precision": 0.9589371980676329,
+    "positive_recall": 0.9706601466992665,
+    "positive_f1": 0.9647630619684082,
+    "confusion_matrix": [
+      [
+        159,
+        51
+      ],
+      [
+        36,
+        1191
+      ]
+    ]
+  },
+  "split_sha256": "32ec41b77d7c0d5266af81bb84087d87f2f733ea535b647c24322c731d71ebe1"
 }
