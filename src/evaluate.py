@@ -115,8 +115,7 @@ def compare(run_ids: list[str] | None = None) -> pd.DataFrame:
     if run_ids:
         table = table[table["run_id"].isin(run_ids)]
     cols = [c for c in ["run_id", "model", "accuracy", "macro_f1", "recall_negative", "recall_positive",
-                        "train_time_s", "val_infer_time_s", "peak_ram_mb", "peak_gpu_mem_mb",
-                        "model_size_mb"] if c in table]
+                        "train_time_s", "val_infer_time_s", "model_size_mb"] if c in table]
     view = table[cols]
     (METRICS_DIR / "comparison.md").write_text(to_markdown(view), encoding="utf-8")
 
